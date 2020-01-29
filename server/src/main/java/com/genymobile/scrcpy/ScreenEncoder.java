@@ -177,7 +177,7 @@ public class ScreenEncoder implements Device.RotationListener {
         try {
             SurfaceControl.setDisplaySurface(display, surface);
             SurfaceControl.setDisplayProjection(display, 0, deviceRect, displayRect);
-            SurfaceControl.setDisplayLayerStack(display, 0);
+            SurfaceControl.setDisplayLayerStack(display, 2);
         } finally {
             SurfaceControl.closeTransaction();
         }
